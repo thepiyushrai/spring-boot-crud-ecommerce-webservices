@@ -4,7 +4,7 @@ import com.sha.springbootproductseller.model.Product;
 
 import java.util.List;
 
-public interface ProductService
+public interface ProductServices
 {
     Product saveProduct(Product product);
 

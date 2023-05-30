@@ -1,7 +1,7 @@
 package com.sha.springbootproductseller.controller;
 
 import com.sha.springbootproductseller.model.Product;
-import com.sha.springbootproductseller.service.ProductService;
+import com.sha.springbootproductseller.service.ProductServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 public class ProductController
 {
     @Autowired
-    private ProductService productService;
+    private ProductServices productService;
 
     @PostMapping //api/product
     public ResponseEntity<?> saveProduct(@RequestBody Product product)
